@@ -1,0 +1,61 @@
+<div class="review-content">
+  <div class="container">
+    <div class="d-flex justify-content-center section-header">
+      <div><h3>Reviews</h3></div>
+      <div data-toggle="modal" data-target="#review"><span>Write a review on this product</span></div>
+    </div>
+    <div class="d-flex justify-content-center review-text" *ngFor="let review of reviews">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 photo">
+          <div class="review-name">
+            <img [src]="review.photoUrl">
+            <p>{{review.name}}</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="review-info">
+            <span class="headline">{{review.title}}</span>
+            <span>{{review.dateReviewed}}</span>
+            <span *ngFor="let star of review.starsArray">
+              <span class="fa fa-star"></span>
+            </span>
+          </div>
+          <div>
+            <p>{{review.review}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="modal fade" id="review">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="d-flex justify-content-start modal-title">
+              <div><h5>Please Rate the <strong>Tough Mojo Jacket</strong></h5></div>
+              <div class="rating"><rating [(ngModel)]="rate" [max]="max"
+                (onHover)="hoveringOver($event)" (onLeave)="resetStar()"
+                [titles]="['one','two','three']"></rating></div>
+            </div>
+            <div class="modal-body">
+              <div class='modal-title'>
+                <label> Review Title: </label>
+                <input type="text">
+              </div>
+              <div class="review-textArea">
+                <textarea class="form-control" rows="8" id="comment" placeholder="-Write your review here-"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <input class="btn btn-primary" data-dismiss="modal" value="Submit Review">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,107 @@
+.review-content {
+  color: white;
+  background-color: #0d47a1;
+  font-family: 'Raleway';
+  padding-bottom: 20px;
+}
+
+.section-header {
+  height: 76px;
+  padding-top: 20px;
+  width: 82.5%;
+  div {
+    h3 {
+      margin-right: 25px;
+    }
+    span {
+      text-decoration: underline;
+    }
+    span:hover {
+      cursor: pointer;
+      font-size: 12px
+    }
+    line-height: 38px;
+    vertical-align: middle;
+  }
+}
+
+.photo {
+  position: relative;
+  div {
+    position: absolute;
+    right: 0px;
+
+    @media screen and (max-width: 580px) {
+      position: relative;
+    }
+  }
+}
+
+.review-text {
+  font-size: 12px;
+}
+
+.review-name {
+  font-weight: 900;
+  img {
+    max-height: 90px;
+  }
+}
+
+.review-info {
+  padding-bottom: 10px;
+
+  span {
+  font-size: 14px;
+  padding-right: 10px;
+
+    .fa-star {
+      color: white;
+      padding-right: 0px;
+    }
+  }
+}
+
+.headline {
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #87CEEB;
+  max-width: 150px;
+}
+
+.container {
+  font-family: 'Raleway';
+}
+
+.modal-title {
+  input {
+    width: 85%;
+    margin-left: 5px;
+  }
+
+  label {
+    display: inline-block;
+    text-align: right;
+  }
+
+}
+
+textarea {
+  margin-top: 5px;
+}
+
+.modal-title {
+  padding-left: 30px;
+  padding-top: 20px;
+
+  div h5 {
+    padding-right: 10px;
+  }
+}
+
+.modal-footer {
+  border-top: none;
+}
+

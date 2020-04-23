@@ -1,0 +1,55 @@
+ul {
+  font-family: 'Raleway';
+  background: #f5f5f5;
+  color: #87CEEB;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-link:after {
+  content: "|";
+  margin-left: 30px;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
+
+a {
+  position: relative;
+  li {
+    position: absolute;
+    bottom: 10px;
+    padding-left: 5px;
+  }
+}
+
+hr {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  border-width: 2px;
+}
+
+a.dropdown-item {
+  text-align: center;
+}
+
+a.dropdown-item:hover {
+  background-color: #87CEEB;
+  color: white;
+}
+
+
+ul.nav {
+  width:100%;
+}
+
+nav.navbar {
+  padding: 0px;
+}
+
+.dropdown-menu {
+  padding: 0px;
+}
+
+

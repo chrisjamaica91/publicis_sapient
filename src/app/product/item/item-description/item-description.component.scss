@@ -1,0 +1,26 @@
+.content {
+  padding-top:10px;
+  background-color: rgb(169,169,169);
+  box-shadow: 0 4px 2px -2px gray;
+  font-family: 'Raleway';
+}
+
+.item-description {
+  max-width:25%;
+  padding-bottom: 15%;
+}
+
+.item-photo {
+  max-height: 70%;
+  max-width: 60%;
+  display: inline-block;
+
+  img {
+    max-height: 63%;
+    max-width: 100%;
+  }
+}
+
+.col {
+  padding-left: 0px;
+}

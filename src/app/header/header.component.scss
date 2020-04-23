@@ -1,0 +1,74 @@
+.jumbotron {
+  background-color: black;
+  color: white;
+  max-height: 2em;
+  box-shadow: 0 4px 2px -2px gray;
+  font-family: 'Raleway';
+}
+
+.jumbotron-fluid {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.header-content {
+  text-align: center;
+  max-width: 400px;
+}
+
+.image-logo {
+  max-height: 50px;
+  margin-top: 10px;
+}
+
+.image-logo:hover {
+  cursor: pointer;
+}
+
+div.inline-block-child div {
+  display: inline-block;
+  margin: 10px 2%;
+  padding-left: 4px;
+}
+
+div.inline-block-child div p:hover {
+  cursor: pointer;
+}
+
+div.inline-block-child div img:hover {
+  cursor: pointer;
+}
+
+.form-center {
+  text-align: center;
+}
+
+.form-center form {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.fb-icon {
+  margin-bottom: 10px;
+}
+
+.search {
+  position: absolute;
+  right: 13%;
+  top: 10px;
+}
+
+.search:hover {
+  cursor: pointer;
+}
+
+.form-inline input {
+  width: 86%;
+  margin-right: none;
+}
+
+div.inline-block-child {
+  margin-right: 18px;
+}

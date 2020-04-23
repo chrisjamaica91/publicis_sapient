@@ -1,0 +1,51 @@
+<div class="main-background">
+  <div class="container main-info">
+    <div class="routing">
+      <a class="active" href="#">Clothing</a><span>></span><strong> Outerwear</strong>
+    </div>
+    <div class="row">
+      <div class="col col-md-6 col-sm-12">
+        <img src="../../../assets/tough-mojo-jacket-img1.png">
+      </div>
+      <div class="col col-md-6 col-sm-12 description">
+        <div>
+          <h3>Tough Mojo Jacket<span>&reg;</span></h3>
+          <p>300 GRAMS OF PRIMALOFT<span>&reg;</span> ONE INSULATION</p>
+          <p>SCHOELLER<span>&reg;</span> MICROFIBER SHELL</p>
+          <p>DIAGONAL QUILTING</p>
+          <p>MICROFIBER RIPSTOP LINER</p>
+          <p>ZIPPER GARAGE AT COLLAR</p>
+          <p>ANCHORED BOTTOM-HEM ADJUSTERS</p>
+          <p>3-IN-1 FRONT POCKETS</p>
+          <p>ZIPPERED CHEST POCKET</p>
+          <p>TWO INTERIOR ZIPPERED POCKETS</p>
+          <p>MADE IN THE PHILLIPINES</p>
+        </div>
+        <div class="row dropdown-padding">
+          <div class="col">
+            <select class="option">
+              <option selected disabled>Select Size</option>
+              <option *ngFor="let size of sizes"> {{size}}</option>
+            </select>
+          </div>
+          <div class="col">
+            <select class="option">
+              <option selected disabled>Select Color</option>
+              <option *ngFor="let color of colors"> {{color}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="row quantity">
+          <div class="col">
+            <p class="amount">Quantity</p>
+            <input class="quantity-input" type="number" min="1" step="1" value="1">
+          </div>
+          <div class="col">
+            <button class="btn">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-item-description></app-item-description>
